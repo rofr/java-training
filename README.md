@@ -1,3 +1,5 @@
+[Open in browser](https://github.com/rofr/java-training/blob/master/README.md)
+
 # Advanced Java
 Greetings and welcome to the course in Advanced Java Programming
 
