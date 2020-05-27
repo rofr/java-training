@@ -1,5 +1,6 @@
 # M0 Introduction Exercises
 
+[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/raw/master/docs/M0_Introduction/exercises.md)
 This is a warmup exercise.
 
 ## 1. Create multiple calculator objects

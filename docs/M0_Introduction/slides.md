@@ -12,7 +12,7 @@ backgroundTransition: 'zoom'
 ## Course Introduction
 
 Notes:
-[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/blob/master/docs/M0_Introduction/slides.md)
+[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/raw/master/docs/M0_Introduction/slides.md)
 
 ---
 

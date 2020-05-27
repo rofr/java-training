@@ -12,7 +12,7 @@ backgroundTransition: 'zoom'
 ## Object oriented java
 
 Notes:
-[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/blob/master/docs/M1_Objectoriented_java/slides.md)
+[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/raw/master/docs/M1_Objectoriented_java/slides.md)
 
 ---
 

@@ -15,4 +15,7 @@ Study the class, run it and examine the output. Note that:
 ## 3. Add the Drawable interface (optional if time permits)
 - Add the Drawable interface according to the slides
 - Make all shapes Drawable, think about where to implement the interface
-- Modify the GeometryDemo program to 
+- Create an array of Drawable objects
+- Loop over the drawables and call draw on each
+
+Tip: Pass a reference to System.out when calling the draw() method
