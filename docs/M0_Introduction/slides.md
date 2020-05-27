@@ -51,8 +51,6 @@ Notes:
 
 Notes: The class library contains a large number of reusable components 
 ---
-#
----
 
 # Hello world
 ```java
@@ -62,7 +60,7 @@ public class Hello
 {
     public static void main(String[] args) {
         double result = Math.sqrt(81);
-        System.out.println("The square root of 81 is " + result);
+        System.out.println("The root of 81 is " + result);
     }
 }
 ```
@@ -105,4 +103,3 @@ Notes: An array is a datastructure that holds many items of the same type. The a
 ---
 # Lab
 Warm up lab
-
