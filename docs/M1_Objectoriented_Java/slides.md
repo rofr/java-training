@@ -12,7 +12,7 @@ backgroundTransition: 'zoom'
 ## Object oriented java
 
 Notes:
-[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/raw/master/docs/M1_Objectoriented_java/slides.md)
+[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/raw/master/docs/M1_Objectoriented_Java/slides.md)
 
 ---
 
@@ -57,7 +57,7 @@ public class Car {
     }
 
     public void setWeight(int value) {
-        if (weight < 100) throw new Exception();
+        if (value < 100) throw new Exception();
         weight = value;
     }
 }

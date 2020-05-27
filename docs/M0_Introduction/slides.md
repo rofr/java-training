@@ -85,7 +85,10 @@ Notes: Focus on the object instance and it's state compared to static methods on
 
 Notes: Think about the code on the previous slide. The calculator object is on the heap. The variables a, b and calculator are on the stack. 
 ---
-
+# Value types vs Reference types
+- primitive types: int, boolean, double, float, etc
+- Reference types: class / objects
+---
 # Garbage collection
 Objects no longer reachable will be automatically freed by the Garbage Collector
 
@@ -94,7 +97,7 @@ Notes: Talk about garbage collection, what value it provides
 
 # Review arrays
 ```java
-   int[] numbers = new numbers[4];
+   int[] numbers = new int[4];
    numbers[0] = 10;
    numbers[1] = 20;
    System.out.println(numbers[2]);
