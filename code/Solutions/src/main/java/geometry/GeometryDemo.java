@@ -16,12 +16,15 @@ public class GeometryDemo {
 		//Taste of java 8 streams
 		Stream.of(shapes).forEach(s -> System.out.println(s));
 		
-		//todo: Calculate and print total area of all shapes
 		double area = 0;
 		for(Shape shape: shapes) {
 			area += shape.area();
 		}
 		System.out.println("Total area: " + area);
+		
+		for(Drawable shape: shapes) {
+			shape.draw(System.out);
+		}
 	}
 	
 	private static Shape randomShape(int i) {
