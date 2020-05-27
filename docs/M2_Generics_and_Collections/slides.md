@@ -59,15 +59,21 @@ Notes: A list is an ordered sequence of items. Odered does not mean in any speci
 ```
 
 ---
+# Maps
+- A map is a key/value store
+- Map<K,V>
+- HashMap<K,V>
+- TreeMap<K,V>
+---
 
 # Using a HashMap
 ```java
   HashMap<String, Integer> wordCounts
     = new HashMap<String,Integer>();
-  words.put("cat", 1);
-  words.put("dog", 4);
-  if (words.containsKey("dog")) {
-      int number = words.get("dog");
+  wordCounts.put("cat", 1);
+  wordConts.put("dog", 4);
+  if (wordCounts.containsKey("dog")) {
+      int number = wordCounts.get("dog");
   }
 ```
 
@@ -77,22 +83,55 @@ Notes: A list is an ordered sequence of items. Odered does not mean in any speci
 ```java
    Iterator<String> iterator
      = wordCounts.keySet().iterator();
-   while(e.hasNext()) {
-       String word = e.next();
+   while(iterator.hasNext()) {
+       String word = iterator.next();
        System.out.println(word);
    }
 ``` 
 
 ---
 
-# Iteration syntactic suger
+# Iteration syntactic sugar
 
 ```java
    for(String word: wordCounts.keySet())
        System.out.println(word);
    }
-``` 
+```
 
+---
+# Comparable and Comparator
+- `Comparable<T>` int compareTo(T other)
+- `Comparator<T>`- int compare(T a, t b)
+- `Collections.sort(numbers)`
+- `Collections.sort(cars)`
+Notes: In order to sort and search items need to be compared. Integers are Comparable but what about cars?
+---
+
+# Comparison and sorting
+- Integer implements Comparable
+```java
+List<Integer> numbers = Arrays.of(4,5,7,3,2);
+Collections.sort(numbers);
+```
+Notes:  
+---
+# Comparator
+
+```java
+public class DescendingByArea implements Comparator<Shape> {
+	
+	@Override
+	public int compare(Shape a, Shape b) {
+		return (int) Math.signum(b.area() - a.area());
+	}
+}
+```
+---
+# Using comparator
+```java
+Collections.sort(shapes, new DescendingByArea());
+```
 ---
 # LAB!
 Time: 1 hour

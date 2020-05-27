@@ -14,12 +14,10 @@ public class GeometryDemo {
 		
 		//Taste of java 8 streams
 		Stream.of(shapes).forEach(s -> System.out.println(s));
-		
-		//todo: Calculate and print total area of all shapes
-		
+	
 	}
 	
-	private static Shape randomShape(int i) {
+	public static Shape randomShape(int i) {
 		Point location = new Point(i++, i++);
 		double r = Math.random();
 		if (r > 0.5) return new Circle(location, i++);

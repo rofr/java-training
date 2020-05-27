@@ -88,6 +88,7 @@ public class Shape implements Drawable {
     }
 }
 ```
+---
 # LAB!
 Geometry
 Time: 1 hour
