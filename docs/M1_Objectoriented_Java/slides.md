@@ -24,7 +24,7 @@ Notes:
 - Interface
 - LAB: Geometry
 
-Note: These are the topics covered in this module. Objects are building blocks that serve as components for large scale software development.
+Notes: These are the topics covered in this module. Objects are building blocks that serve as components for large scale software development.
 
 ---
 

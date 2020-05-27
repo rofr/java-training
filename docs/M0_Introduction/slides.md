@@ -87,8 +87,9 @@ Notes: Think about the code on the previous slide. The calculator object is on t
 ---
 
 # Garbage collection
-Objects no longer reachable will be automatically released by the Garbage Collector
+Objects no longer reachable will be automatically freed by the Garbage Collector
 
+Notes: Talk about garbage collection, what value it provides
 ---
 
 # Review arrays
@@ -98,8 +99,9 @@ Objects no longer reachable will be automatically released by the Garbage Collec
    numbers[1] = 20;
    System.out.println(numbers[2]);
 ```
-Notes: An array is a datastructure that holds many items of the same type. The array is stored on the heap. Arrays cannot be resized. Accessed by index.
+Notes: An array is a datastructure that holds many items of the same type. The array is stored on the heap. Arrays cannot be resized. Accessed by index. You will use arrays in the lab.
 
 ---
 # Lab
 Warm up lab
+Estimated time: 45 min

@@ -16,23 +16,6 @@
 - M6 Executor Framework
 - M7 TestNG
 
-# M0 Introduction
-
-Jvm, garbage collection
-Using objects, using static methods
-Key takeaway. understand static / instance methods. API documentation
-Lab: take from T2732? T2731
-
-# M1 Object oriented Java
-Review of basics
-* Class
-* Properties - getters and setters
-* Constructors
-* Methods
-* Inheritance , interface implements
-Lab: Figures / polymorphism
-Take labs from T2732 
-
 # M2 Generics and Collections
 Interfaces - See slides from T2731
 Lab: Create random shapes and add to a generic collection of your choice
