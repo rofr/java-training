@@ -11,6 +11,7 @@ Study the class, run it and examine the output. Note that:
 - Add a new kind of Shape, a Triangle. For simplicities sake only equilateral triangles are supported. You can represent a triangle with a base and a height. 
 - Make sure you override toString()
 - Modify the GeometryDemo program to include some triangles
+- Print the total area of all the shapes
 
 ## 3. Add the Drawable interface (optional if time permits)
 - Add the Drawable interface according to the slides
