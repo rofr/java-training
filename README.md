@@ -20,7 +20,7 @@ Programmers with experience from other languages that have recently switched to 
 3 years experience of programming in a language other than Java and 6 months experience of Java
  
 ## Course Objectives
-Gain a good understanding of the more advanced features of the Java language, some of the key API’s and
+Gain a good understanding of the more advanced features of the Java language and some of the most important API’s.
  
 ## Course Outline
 * Introduction

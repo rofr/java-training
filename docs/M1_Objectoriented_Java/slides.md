@@ -8,103 +8,86 @@ transition: 'slide'
 backgroundTransition: 'zoom'
 ---
 
-# M0
-## Course Introduction
+# M1
+## Object oriented java
 
 Notes:
-[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/blob/master/docs/M0_Introduction/slides.md)
+[Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/blob/master/docs/M1_Objectoriented_java/slides.md)
 
 ---
 
 # Contents
-- Introduction
-- Java Review
-- Objects
-- Heap and Stack
-- LAB: ?
+- Principles of OO
+- Class definition and members
+- Properties
+- Inheritance
+- Interface
+- LAB: Geometry
 
-Note: These are the topics covered in this module
+Note: These are the topics covered in this module. Objects are building blocks that serve as components for large scale software development.
+
+---
+
+# Principles of OO
+ - How humans represent the world
+ - Ecapsulation
+ - Composition
+ - Inheritance
+ - Polymorphism
 
 ---
 
-# Introduction
- - Your instructor
- - Materials
- - Environment
- - Format and timings
-
-Notes: 
-- Instructor presentation
-- Review the top level README document
----
-
-# Java Review
-- Created 1995
-- Write once , run anywhere
-- Interpreted, runs on a JVM
-- Garbage collection
-
----
-# JRE Java Runtime Environment
-- JVM
-- Class library
-
-Notes: The class library contains a large number of reusable components 
----
-#
----
-
-# Hello world
+# Class definition
 ```java
-package m0.hello;
+public class Car { 
+  // members:
+  //fields
+  //methods
+  //constructors
+}```
 
-public class Hello
-{
-    public static void main(String[] args) {
-        double result = Math.sqrt(81);
-        System.out.println("The square root of 81 is " + result);
+---
+# Properties
+```java
+public class Car {
+    private int weight;
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int value) {
+        if (weight < 100) throw new Exception();
+        weight = value;
     }
 }
 ```
-Notes: Talk through the parts of the program, focus on static methods on the math class
 ---
-
-# A calculator example
+# Inheritance
 ```java
-  int a = 100;
-  int b = 200;
-  Calculator calculator = new Calculator();
-  calculator.add(a);
-  calculator.add(b);
-  calculator.reset();
+public abstract class Shape {}
+
+public class Circle extends Shape {}
 ```
-Notes: Focus on the object instance and it's state compared to static methods on the math class. The object has state and operations.
 ---
-
-# Heap and stack
-- The heap is where all objects are kept
-- The stack is used for local method variables and parameters
-
-Notes: Think about the code on the previous slide. The calculator object is on the heap. The variables a, b and calculator are on the stack. 
----
-# Calculator implementation
-
+# Interface
+- An interface describes a contract
 ```java
-public class Calculator {
-    private int value;
+public interface Drawable {
+    void draw(PrintWriter pw);
+}
+```
+Notes: Things that are drawable have a draw() method
+___
 
-    public void add(int a ) {
-        value += a;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void reset() {
-        value = 0;
+# Interface implementation
+```java
+public class Shape implements Drawable {
+    public void draw(PrintWriter pw) {
+      pw.println(toString());
     }
 }
 ```
-Notes: Th
----
+# LAB!
+Geometry
+Time: 1 hour
