@@ -25,9 +25,6 @@ public class ComparisonDemo {
 		circles.add(new Circle(location, 20));
 		
 		//todo: the next line does not compile. Why? Fix it.
-		Collections.sort(circles);
-		
-		//Collections.
-		
+		//Collections.sort(circles);
 	}
 }
