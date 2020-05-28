@@ -11,6 +11,9 @@ backgroundTransition: 'zoom'
 # M6
 ## Executor Framework
 
+External slides
+PDF will be shared in the chat
+
 Notes:
 [Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/raw/master/docs/M5_ExecutorFramework/slides.md)
 

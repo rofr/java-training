@@ -9,7 +9,10 @@ backgroundTransition: 'zoom'
 ---
 
 # M5
-## Java 8 functional extensions
+## Threads and Concurrency
+
+External slides in powerpoint
+PDF will be shared in the chat
 
 Notes:
 [Open in browser](https://mark.show/?source=https://github.com/rofr/java-training/raw/master/docs/M5_Concurrency/slides.md)
