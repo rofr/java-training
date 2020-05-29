@@ -1,7 +1,5 @@
 # Module 7 - Automated test using TestNG
 
-[Open in browser](https://github.com/rofr/java-training/raw/master/docs/M7_TestNG/README.md)
-
 TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use, such as:
 
 * Annotations.

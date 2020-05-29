@@ -24,13 +24,18 @@ public class CalculatorTests
 		assertEquals(6,9);
 	}
 	
-	@Fact
+	@Fact(expectedException=RuntimeException.class)
 	public void throwingTest() {
 		throw new RuntimeException("Gotcha!");
 	}
+
+	@Fact(expectedException=RuntimeException.class)
+	public void throwingWrongExceptionTest() {
+		throw new IllegalArgumentException("Gotcha!");
+	}
 	
 	@Fact
-	public int invalidSignature() {
-		return 42;
+	public void noAssertion() {
+		
 	}
 }

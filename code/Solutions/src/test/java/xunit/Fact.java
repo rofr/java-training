@@ -9,5 +9,6 @@ import java.lang.annotation.Target;
 @Retention(RUNTIME)
 @Target(METHOD)
 public @interface Fact {
-
+   public Class<? extends Exception> 
+      expectedException() default DummyException.class;
 }

@@ -1,5 +1,6 @@
 package xunit;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.Arrays;
@@ -16,21 +17,45 @@ public class Runner {
 			Class c = Class.forName(className);
 			
 			for(Method m : c.getDeclaredMethods()) {
+				
+				 Fact fact = m.getAnnotation(Fact.class);
+				 if (fact == null) continue;
+				 
+				 boolean expectsException 
+				 	= fact.expectedException() != DummyException.class;
+			
+				 boolean expectedExceptionWasThrown = false;
+				 
 				if (!signatureIsValid(m)) {
 					Assert.ok = false;
 					Assert.message = "Invalid test method, must be public void and take 0 arguments";
 					reportResult(m);
 					continue;
 				}
+
 				Object testInstance = c.newInstance();
 				Assert.reset();
 
 				try {
 					m.invoke(testInstance);
-				} catch (Exception ex) {
+				} catch (InvocationTargetException ex) {
+					if (ex.getTargetException().getClass() == fact.expectedException()) {
+						expectedExceptionWasThrown = true;
+						Assert.ok = true;
+					} else {
+						Assert.ok = false;
+						Assert.message = "threw exception: " + ex.getClass();						
+					}
+				} catch(Exception ex) {
 					Assert.ok = false;
-					Assert.message = "threw exception: " + ex.getMessage();
+					Assert.message = "Unexpected exception: " + ex.getClass();
 				}
+				
+				if (expectsException && ! expectedExceptionWasThrown) {
+					Assert.ok = false;
+					Assert.message = "Expected " + fact.expectedException();
+				}
+				
 				reportResult(m);				
 			}
 
@@ -43,15 +68,14 @@ public class Runner {
 	}
 
 	private static boolean signatureIsValid(Method m) {
+		
 		int modifiers = m.getModifiers();
+		
 		boolean isValid = m.getParameterCount() == 0
 				&& m.getReturnType() == void.class
 				&& Modifier.isPublic(modifiers)
 				&& ! Modifier.isStatic(modifiers);
-		if (!isValid) {
-			Assert.ok = false;
-			
-		}
+		
 		return isValid;
 	}
 

@@ -13,4 +13,5 @@
 
 # Maven
 log/
+test-output/
 target/
