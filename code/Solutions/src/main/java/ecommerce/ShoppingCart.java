@@ -22,8 +22,4 @@ public class ShoppingCart {
     public int count() {
         return items.size();
     }
-
-    public List<CartItem> getItems() {
-        return items;
-    }
 }

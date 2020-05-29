@@ -3,16 +3,15 @@ package ecommerce;
 import mockit.*;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
-
 public class OrderProcessorTests {
 
     @Injectable InventoryManager inventoryManager;
     @Injectable OrderRepository orderRepository;
     @Tested OrderProcessor orderProcessor;
-
+    @Mocked ShoppingCart shoppingCart;
+    
     @Test
-    public void adjustsInventory(@Mocked ShoppingCart shoppingCart) {
+    public void adjustsInventory() {
         new Expectations(){{
             shoppingCart.count(); result = 2;
             shoppingCart.getItem(0);

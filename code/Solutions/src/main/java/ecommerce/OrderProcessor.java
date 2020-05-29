@@ -5,7 +5,9 @@ public class OrderProcessor {
     private OrderRepository orderRepository;
 
     public void placeOrder(ShoppingCart cart) {
-        for(CartItem item: cart.getItems()) {
+    	int count = cart.count();
+        for(int i = 0; i < count; i++) {
+        	CartItem item = cart.getItem(i);
             inventoryManager.reserve(
                     item.getProductId(),
                     item.getQuantity());
