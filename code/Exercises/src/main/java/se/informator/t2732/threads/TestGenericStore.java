@@ -6,7 +6,7 @@ public class TestGenericStore {
   public static void main(String[] args) throws Exception {
 	  
     GenericStore<Property> store = new PropertyStore(5);
-    String filename = "properties.txt";
+    String filename = "src/main/java/properties.txt";
     
     PropertyProducer producer = new PropertyProducer(filename, store);
     PropertyConsumer consumer1 = new PropertyConsumer(store);
