@@ -19,12 +19,22 @@ public class ComparisonDemo {
 		Collections.sort(numbers);
 		
 		Point location = new Point(10,20);
-		ArrayList<Circle> circles = new ArrayList<Circle>();
+		ArrayList<Circle> circles
+				= new ArrayList<Circle>();
 		circles.add(new Circle(location, 30));
 		circles.add(new Circle(location, 40));
 		circles.add(new Circle(location, 20));
-		
-		//todo: the next line does not compile. Why? Fix it.
-		//Collections.sort(circles);
+
+		System.out.println("Ascending (default)");
+		Collections.sort(circles);
+		for (Circle c: circles) {
+			System.out.println(c);
+		}
+
+		System.out.println("Descending");
+		Collections.sort(circles, (a,b) -> -a.compareTo(b));
+		for (Circle c: circles) {
+			System.out.println(c);
+		}
 	}
 }

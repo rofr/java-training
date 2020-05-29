@@ -1,20 +1,22 @@
 package geometry;
 
+import java.util.LinkedList;
+import java.util.List;
 import java.util.stream.Stream;
 
 public class GeometryDemo {
 
 	public static void main(String[] args) {
-		Shape[] shapes = new Shape[10];
+		List<Shape> shapes = new LinkedList<>();
 		
 		System.out.println("Creating random shapes");
-		for(int i = 0; i < 10; i++) {
-			shapes[i] = randomShape(i);
+		for(int i = 0; i < 797; i++) {
+			Shape s = randomShape(i);
+			shapes.add(s);
 		}
 		
 		//Taste of java 8 streams
-		Stream.of(shapes).forEach(s -> System.out.println(s));
-	
+		shapes.stream().forEach(s -> System.out.println(s));
 	}
 	
 	public static Shape randomShape(int i) {

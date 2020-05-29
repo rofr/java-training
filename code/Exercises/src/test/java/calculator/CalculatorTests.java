@@ -1,7 +1,6 @@
 package calculator;
 
-import static xunit.Assert.assertEquals;
-
+import static xunit.Assert.*;
 
 public class CalculatorTests
 {

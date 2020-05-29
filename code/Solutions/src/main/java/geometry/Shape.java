@@ -6,7 +6,7 @@ public abstract class Shape implements Drawable {
    protected Point location;
    
    protected Shape(Point location) {
-	   this.location = location;
+       this.location = location;
    }
    
    public abstract double area();

@@ -6,7 +6,7 @@ public class Runner {
 		
 		//Let's pretend this string is passed as an argument
 		String className = "calculator.CalculatorTests";
-		
+		System.out.println("hello");
 		//TODO: use reflection to create a Class object
 		
 		//TODO: Use reflection to find test methods on the

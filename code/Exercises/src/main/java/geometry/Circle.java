@@ -1,6 +1,6 @@
 package geometry;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Comparable<Circle> {
 
 	private final double radius;
 	
@@ -18,6 +18,10 @@ public class Circle extends Shape {
 	public double area() {
 		return Math.PI * radius * radius;
 	}
-	
-	
+
+
+	@Override
+	public int compareTo(Circle other) {
+		return (int) Math.signum(area() - other.area());
+	}
 }

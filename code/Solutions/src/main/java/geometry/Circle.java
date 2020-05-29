@@ -7,6 +7,7 @@ public class Circle extends Shape {
 	public Circle(Point location, double radius) {
 		super(location);
 		this.radius = radius;
+
 	}
 
 	@Override
@@ -16,6 +17,7 @@ public class Circle extends Shape {
 
 
 	public double area() {
+		Point p = super.location;
 		return Math.PI * radius * radius;
 	}
 	

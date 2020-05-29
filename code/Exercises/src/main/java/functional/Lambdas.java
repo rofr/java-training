@@ -13,7 +13,8 @@ public class Lambdas {
 
 		BiFunction<Integer,Integer, Integer> addition
 		   = (a, b) -> a + b;
-		   
+
+
 	   int result = addition.apply(100, 200);
 	   System.out.println("100 + 200 = " + result);
 		   
@@ -26,7 +27,7 @@ public class Lambdas {
 	   System.out.println("100 - 40 = " + diff);
 	   
 	   Calculator calculator = new Calculator();
-	   calculator.add(500);
+		calculator.add(500);
 	   
 	   Consumer<Integer> consumer = calculator::add;
 	   consumer.accept(200);
@@ -37,7 +38,7 @@ public class Lambdas {
 	   System.out.println("700 + 100 = " + calculator.getValue());
 
 	}
-	
+
 	public static int subtract(int a, int b) {
 		return a - b;
 	}

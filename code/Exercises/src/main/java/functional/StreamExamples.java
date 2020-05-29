@@ -1,10 +1,11 @@
 package functional;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.BinaryOperator;
 import java.util.function.Function;
+import java.util.function.Supplier;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -26,13 +27,22 @@ public class StreamExamples {
         String s = "1 2 3 4 5 6 7 8 9 10";
 
         System.out.println("1. Mapping with a one-argument function:");
-        List<Integer> ints = Arrays.stream(s.split("\\s+")).map(Integer::parseInt).collect(Collectors.toList());
-        System.out.println(ints);
-
+        List<Integer> ints = Arrays
+                .stream(s.split("\\s+"))
+                .map(Integer::parseInt)
+                .filter(n -> n < 7)
+                .collect(Collectors.toList());
+         System.out.println(ints);
         System.out.println("2. Mapping with a simple lambda expression:");
-        List<Double> pow2 = ints.stream().map(x -> Math.pow(2.0, x)).collect(Collectors.toList());
+        List<Double> pow2 = ints
+                .stream()
+                .map(x -> Math.pow(2.0, x))
+                .collect(Collectors.toList());
         System.out.println(pow2);
-        List<String> doubled = ints.stream().map(i -> i + "_" + i).collect(Collectors.toList());
+        List<String> doubled = ints
+                .stream()
+                .map(i -> i + "_" + i)
+                .collect(Collectors.toList());
         System.out.println(doubled);
 
         System.out.println("3. Mapping with complex function:");
