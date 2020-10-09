@@ -1,6 +1,6 @@
 package calculator;
 
-import static xunit.Assert.*;
+import static xunit.Assert.assertEquals;
 
 public class CalculatorTests
 {
@@ -15,7 +15,7 @@ public class CalculatorTests
         Calculator calculator = new Calculator();
         calculator.add(100);
         calculator.add(200);
-        assertEquals(300, calculator.getValue());
+		assertEquals(300, calculator.getValue());
     }
     
 	//@Fact

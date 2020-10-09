@@ -8,7 +8,7 @@ Study the class, run it and examine the output. Note that:
 - Is something missing in the Rectangle class? Add it!
 
 ## 2. Add a Triangle class
-- Add a new kind of Shape, a Triangle. For simplicities sake only equilateral triangles are supported. You can represent a triangle with a base and a height. 
+- Add a new kind of Shape, a Triangle. For simplicity sake only equilateral triangles are supported. You can represent a triangle with a base and a height. 
 - Make sure you override toString()
 - Modify the GeometryDemo program to include some triangles
 - Print the total area of all the shapes

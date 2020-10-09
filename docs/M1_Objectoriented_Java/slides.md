@@ -30,7 +30,7 @@ Notes: These are the topics covered in this module. Objects are building blocks 
 
 # Principles of OO
  - How humans represent the world
- - Ecapsulation
+ - Encapsulation
  - Composition
  - Inheritance
  - Polymorphism

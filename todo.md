@@ -15,6 +15,7 @@
 - M5 continued 
 - M6 Executor Framework
 - M7 TestNG
+- M8 JMockit
 
 # M2 Generics and Collections
 Interfaces - See slides from T2731

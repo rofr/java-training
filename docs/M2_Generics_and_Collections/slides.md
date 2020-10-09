@@ -42,11 +42,11 @@ Notes: A list is an ordered sequence of items. Odered does not mean in any speci
 ---
 
 # Sets
-- Set<E>
+- Set<E>, SortedSet<E>
 - An element is either a member or not a member
 - No duplicates possible
-- HashSet<E>
-- SortedSet<E>
+- HashSet<E>, implements Set<E>
+- TreeSet<E>, implements SortedSet<E>
 
 ---
 

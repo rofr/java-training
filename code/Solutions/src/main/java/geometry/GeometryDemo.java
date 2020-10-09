@@ -20,6 +20,7 @@ public class GeometryDemo {
 		for(Shape shape: shapes) {
 			area += shape.area();
 		}
+		
 		System.out.println("Total area: " + area);
 		
 		for(Drawable shape: shapes) {

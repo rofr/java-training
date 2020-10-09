@@ -19,7 +19,7 @@ public class Triangle extends Shape {
 
 	@Override
 	public String toString() {
-		return "Triangle [width=" + width + ", height=" + height + ", location=" + location + "]";
+		return "Triangle [id= " + id +",width=" + width + ", height=" + height + ", location=" + location + "]";
 	}
 
 	

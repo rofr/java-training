@@ -12,7 +12,7 @@ public class Circle extends Shape {
 
 	@Override
 	public String toString() {
-		return "Circle [radius=" + radius + ", location=" + location + "]";
+		return "Circle [id=" + id + ",radius=" + radius + ", location=" + location + "]";
 	}
 
 

@@ -1,6 +1,7 @@
 package geometry;
 
-public abstract class Shape {
+public abstract class Shape implements Comparable<Shape>
+{
    protected Point location;
    
    protected Shape(Point location) {
@@ -8,4 +9,9 @@ public abstract class Shape {
    }
    
    public abstract double area();
+
+   public int compareTo(Shape other) {
+      return (int) Math.signum(area() - other.area());
+   }
+
 }

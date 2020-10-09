@@ -1,0 +1,23 @@
+    @FunctionalInterface
+    public interface ActionListener {
+		void actionPerformed();
+	}
+
+
+	public class MyActionListener implements ActionListener{
+		public void actionPerformed() {
+			System.out.println("button pressed!");
+		}
+	}
+
+     JButton b = new JButton();
+	 //b.setActionListener(new MyActionListener());
+
+    b.setActionListener(new ActionListener(){
+		public void actionPerformed() {
+			System.out.println("button pressed");
+		}
+	});
+
+    //simplest possible lambda
+	b.setActionListener(() -> System.out.println("button pressed"));

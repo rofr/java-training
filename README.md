@@ -5,7 +5,7 @@ Greetings and welcome to the course in Advanced Java Programming
 
 ## Course Hours
 The virtual class room is open from 8:45 to 17:00
-Class starts at 9:00 and ends at16:00
+Class starts at 9:00 and ends at 16:00
 Morning break: 10:20-10:40
 Lunch break: 12:00-13:00
 Afternoon break: 14:20-14:40
